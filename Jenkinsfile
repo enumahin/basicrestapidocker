@@ -13,17 +13,9 @@ pipeline{
                     }
                 }
         }
-        stage("Deploying to Staging Server"){
+        stage("Create tomcat docker image"){
             steps {
-                build job: "Deploy_Application_Staging_Server"
-            }
-        }
-        stage("Deploying to Production Server"){
-            steps {
-                timeout(time:5, unit:'DAYS'){
-                    input message:'Approve Production Deployment?'
-                }
-                build job: "Deploy_Application_Prod_Server"
+                sh "mvn spring-boot:build-image"
             }
         }
     }
