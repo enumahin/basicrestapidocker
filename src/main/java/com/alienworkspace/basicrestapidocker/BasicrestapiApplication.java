@@ -1,4 +1,4 @@
-package com.alienworkspace.basicrestapi;
+package com.alienworkspace.basicrestapidocker;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

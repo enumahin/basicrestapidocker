@@ -1,8 +1,8 @@
-package com.alienworkspace.basicrestapi.controller;
+package com.alienworkspace.basicrestapidocker.controller;
 
-import com.alienworkspace.basicrestapi.config.AbstractTestContainerBase;
-import com.alienworkspace.basicrestapi.model.Employee;
-import com.alienworkspace.basicrestapi.service.EmployeeService;
+import com.alienworkspace.basicrestapidocker.config.AbstractTestContainerBase;
+import com.alienworkspace.basicrestapidocker.model.Employee;
+import com.alienworkspace.basicrestapidocker.service.EmployeeService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

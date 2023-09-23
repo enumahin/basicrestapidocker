@@ -18,5 +18,13 @@ pipeline{
                 build job: "Deploy_Application_Staging_Server"
             }
         }
+        stage("Deploying to Production Server"){
+            steps {
+                timeout(time:5, unit:'DAYS'){
+                    input message:'Approve Production Deployment?'
+                }
+                build job: "Deploy_Application_Prod_Server"
+            }
+        }
     }
 }

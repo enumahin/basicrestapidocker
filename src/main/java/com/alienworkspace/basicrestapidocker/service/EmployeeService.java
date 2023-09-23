@@ -1,6 +1,6 @@
-package com.alienworkspace.basicrestapi.service;
+package com.alienworkspace.basicrestapidocker.service;
 
-import com.alienworkspace.basicrestapi.model.Employee;
+import com.alienworkspace.basicrestapidocker.model.Employee;
 
 import java.util.List;
 import java.util.Optional;

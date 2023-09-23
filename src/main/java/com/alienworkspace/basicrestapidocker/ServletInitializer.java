@@ -1,4 +1,4 @@
-package com.alienworkspace.basicrestapi;
+package com.alienworkspace.basicrestapidocker;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;

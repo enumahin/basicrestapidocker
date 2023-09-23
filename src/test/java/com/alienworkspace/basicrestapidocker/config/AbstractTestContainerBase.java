@@ -1,4 +1,4 @@
-package com.alienworkspace.basicrestapi.config;
+package com.alienworkspace.basicrestapidocker.config;
 
 import org.springframework.test.context.DynamicPropertyRegistry;
 import org.springframework.test.context.DynamicPropertySource;

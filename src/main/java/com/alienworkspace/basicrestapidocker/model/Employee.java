@@ -1,4 +1,4 @@
-package com.alienworkspace.basicrestapi.model;
+package com.alienworkspace.basicrestapidocker.model;
 
 import lombok.*;
 

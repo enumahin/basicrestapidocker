@@ -1,8 +1,8 @@
-package com.alienworkspace.basicrestapi.service.impl;
+package com.alienworkspace.basicrestapidocker.service.impl;
 
-import com.alienworkspace.basicrestapi.model.Employee;
-import com.alienworkspace.basicrestapi.repository.EmployeeRepository;
-import com.alienworkspace.basicrestapi.service.EmployeeService;
+import com.alienworkspace.basicrestapidocker.model.Employee;
+import com.alienworkspace.basicrestapidocker.repository.EmployeeRepository;
+import com.alienworkspace.basicrestapidocker.service.EmployeeService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

@@ -1,7 +1,7 @@
-package com.alienworkspace.basicrestapi.controller;
+package com.alienworkspace.basicrestapidocker.controller;
 
-import com.alienworkspace.basicrestapi.model.Employee;
-import com.alienworkspace.basicrestapi.service.EmployeeService;
+import com.alienworkspace.basicrestapidocker.model.Employee;
+import com.alienworkspace.basicrestapidocker.service.EmployeeService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
