@@ -85,7 +85,7 @@
                 <configuration>
                     <image>
                         <name>
-                            enumahin/basicrestapidocker:${project.version}
+                            enumahin/${project.artifactId}:${project.version}
                         </name>
                     </image>
                     <excludes>

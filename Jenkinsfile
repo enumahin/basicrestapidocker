@@ -1,5 +1,10 @@
 pipeline{
     agent any
+    environment {
+        //Use Pipeline Utility Steps plugin to read information from pom.xml into env variables
+        ARTIFACT_ID = readMavenPom().getArtifactId()
+        VERSION = readMavenPom().getVersion()
+        }
     stages {
         stage("Building Application"){
             steps{
@@ -8,8 +13,8 @@ pipeline{
             post {
                     success {
                         echo "Archiving Artifact"
-                        sh "mv target/*.war target/basicrestapi.war"
-                        archiveArtifacts artifacts: "target/basicrestapi.war"
+                        sh "mv target/*.war target/${ARTIFACT_ID}.war"
+                        archiveArtifacts artifacts: "target/${ARTIFACT_ID}.war"
                     }
                 }
         }
@@ -20,7 +25,7 @@ pipeline{
         }
         stage("Pushing docker image to docker hub"){
             steps {
-                sh "docker push basicrestapidocker:${env.BUILD_ID}"
+                sh "docker push ${ARTIFACT_ID}:${VERSION}"
             }
         }
     }
