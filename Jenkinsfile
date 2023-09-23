@@ -20,7 +20,6 @@ pipeline{
         }
         stage("Pushing docker image to docker hub"){
             steps {
-                sh 'echo ${env.BUILD_ID}'
                 sh "docker push basicrestapidocker:${env.BUILD_ID}"
             }
         }
