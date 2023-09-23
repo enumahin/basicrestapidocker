@@ -25,7 +25,7 @@ pipeline{
         }
         stage("Pushing docker image to docker hub"){
             steps {
-                sh "docker push ${ARTIFACT_ID}:${VERSION}"
+                sh "docker push enumahin/${ARTIFACT_ID}:${VERSION}"
             }
         }
     }
