@@ -13,9 +13,15 @@ pipeline{
                     }
                 }
         }
-        stage("Create tomcat docker image"){
+        stage("Create docker image"){
             steps {
                 sh "mvn spring-boot:build-image"
+            }
+        }
+        stage("Pushing docker image to docker hub"){
+            steps {
+                sh 'echo ${env.BUILD_ID}'
+                sh "docker push basicrestapidocker:${env.BUILD_ID}"
             }
         }
     }
